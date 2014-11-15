@@ -3,10 +3,9 @@ require 'sinatra'
 require 'sinatra/reloader'
  
 get '/' do
-	    "Hello World!"
+	    erb :index
 end
 
-get '/hello/:name' do
-	"Hello #{params['name']}"
+post '/logon' do
+	erb :logon
 end
-
